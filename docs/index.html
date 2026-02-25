@@ -1,7 +1,142 @@
-<html>
-  <head>
-    <body>
-      <b>test...</b>
-    </body>
-  </head>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>麦茶商店 | こだわりの麦茶専門店</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6ec;
+            color: #4a3b2a;
+        }
+        header {
+            background-color: #8b5e3c;
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+        }
+        nav {
+            background-color: #a9744f;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            border-left: 6px solid #8b5e3c;
+            padding-left: 10px;
+        }
+        .product {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        footer {
+            background-color: #8b5e3c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #8b5e3c;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #6f472c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>麦茶商店</h1>
+    <p>昔ながらの製法でつくる、香ばしい本格麦茶</p>
+</header>
+
+<nav>
+    <a href="#about">お店について</a>
+    <a href="#products">商品紹介</a>
+    <a href="#access">店舗情報</a>
+    <a href="#contact">お問い合わせ</a>
+</nav>
+
+<section id="about">
+    <h2>お店について</h2>
+    <p>
+        麦茶商店は、地元の大麦を丁寧に焙煎し、香りと味わいにこだわった麦茶を販売する個人商店です。
+        創業以来、「毎日飲みたくなる麦茶」を目指して、手間を惜しまず製造しています。
+    </p>
+</section>
+
+<section id="products">
+    <h2>商品紹介</h2>
+
+    <div class="product">
+        <h3>特選焙煎麦茶（ティーバッグ）</h3>
+        <p>香ばしさとまろやかな後味が特徴。ご家庭用におすすめ。</p>
+        <p><strong>価格：600円（税込）</strong></p>
+        <a href="#" class="button">購入する</a>
+    </div>
+
+    <div class="product">
+        <h3>昔ながらの粒麦茶</h3>
+        <p>煮出して楽しむ本格派。深い香りをお楽しみください。</p>
+        <p><strong>価格：800円（税込）</strong></p>
+        <a href="#" class="button">購入する</a>
+    </div>
+
+</section>
+
+<section id="access">
+    <h2>店舗情報</h2>
+    <p>店名：麦茶商店</p>
+    <p>住所：〒123-4567 東京都麦町1-2-3</p>
+    <p>営業時間：10:00〜18:00（定休日：水曜日）</p>
+    <p>TEL：03-1234-5678</p>
+</section>
+
+<section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>商品に関するご質問やご注文は、下記フォームよりお問い合わせください。</p>
+    <form>
+        <label>お名前<br>
+            <input type="text" name="name" required>
+        </label><br><br>
+
+        <label>メールアドレス<br>
+            <input type="email" name="email" required>
+        </label><br><br>
+
+        <label>お問い合わせ内容<br>
+            <textarea name="message" rows="5" required></textarea>
+        </label><br><br>
+
+        <button type="submit" class="button">送信する</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 麦茶商店 All Rights Reserved.</p>
+</footer>
+
+</body>
 </html>
